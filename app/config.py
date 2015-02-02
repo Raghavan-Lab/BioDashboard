@@ -8,3 +8,5 @@ TOOLS = [{'title': 'Find Orthologs', 'link': 'find_orthologs'},
 # Set Base directory to wherever the script is
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
+WTF_CSRF_ENABLED = True
+SECRET_KEY = 'you-will-never-guess'
