@@ -61,7 +61,11 @@ def find_orthologs_view():
             print("File Check Failed.  Paths are missing")
             flash("Please check the file type and try again.  Supported extensions: {}".format(ALLOWED_EXTENSIONS))
         else:
-            #-------------  Run Ortholog Script  -------------------
+            #------------------- Place Ortholog Script Here -------------------
+            #  This area is where you can call the reciprocal blast routine.  The two amino acid files
+            # are stored in 'path_a' and 'path_b'.  The 'check_output' function call under this comment
+            # is an example of running a shell command from this script.  DO NOT USE A SHELL.
+            # Security issues: https://docs.python.org/2/library/subprocess.html#frequently-used-arguments
 
             # Calling a shell command on the files that we uploaded just to show you we can.  :)
             return '''Our Batch # was <b>{}</b> <br> Concatenated files:<br> {}'''.format(batch_id,
